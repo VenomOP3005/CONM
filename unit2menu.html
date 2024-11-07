@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frame24css</title>
+    <style>
+        /* General Body Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #00c6ff, #2575fc);
+        }
+
+        /* UL List Styling */
+        ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 120px 0 0; /* Add margin at the top */
+    width: 350px;
+    background-color: white;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* List Item and Link Styling */
+ul li a {
+    display: block;
+    padding: 15px; /* Adjust padding to make items smaller if needed */
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0072ff;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+        /* Hover effect */
+        ul li a:hover {
+            background-color: #2575fc;
+            color: white;
+            box-shadow: 0 4px 12px rgba(37, 117, 252, 0.4);
+        }
+
+        /* Active/Clicked Effect */
+        ul li a:active {
+            background-color: #1d5bb5;
+            color: white;
+        }
+
+        /* For Mobile View */
+        @media (max-width: 768px) {
+            ul {
+                width: 90%;
+            }
+            ul li a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="BISECTION METHOD.html" target="targetframe">BISECTION METHOD</a></li>
+        <li><a href="REGULAR FALSI METHOD.html" target="targetframe">FALSE POSITION METHOD</a></li>
+        <li><a href="SECANT METHOD.html" target="targetframe">SECANT METHOD</a></li>
+        <li><a href="NEWTON RAPHSON METHOD.html" target="targetframe">NEWTON RAPHSON METHOD</a></li>
+        <li><a href="BIRGE-VIETA METHOD.html" target="targetframe">BIRGE-VIETA METHOD</a></li>
+        <li><a href="GUASS ELIMINATION METHOD.html" target="targetframe">GUASS ELIMINATION METHOD</a></li>
+        <li><a href="GUASS JORDAN METHOD.html" target="targetframe">GUASS JORDAN METHOD</a></li>
+        <li><a href="GUASS SEIDAL METHOD.html" target="targetframe">GUASS SEIDAL METHOD</a></li>
+    </ul>
+</body>
+</html>

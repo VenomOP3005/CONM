@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIT 3: Numerical Methods</title>
+    <style>
+        /* Import Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        /* Body Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Upper Column Section */
+        .upper-column {
+            background: linear-gradient(120deg, #1e3c72, #2a5298);
+            width: 100%;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .upper-column h1 {
+            font-size: 3.5em;
+            margin: 0;
+            color: #f5f5f5;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+        }
+
+        .upper-column p {
+            font-size: 1.2em;
+            margin-top: 15px;
+            color: #dddddd;
+            max-width: 700px;
+            margin: 15px auto;
+        }
+
+        .upper-column .btn {
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #f85032;
+            color: white;
+            font-size: 1.2em;
+            font-weight: 600;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .upper-column .btn:hover {
+            background-color: #ff7657;
+            transform: translateY(-3px);
+            box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Content Section */
+        .content-section {
+            padding: 50px 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        .content-section h2 {
+            font-size: 2.5em;
+            color: #1d3557;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .content-section ul {
+            margin-left: 20px;
+        }
+
+        .content-section ul li {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            list-style-type: disc;
+            color: #333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .upper-column h1 {
+                font-size: 2.5rem;
+            }
+
+            .content-section {
+                padding: 20px;
+            }
+
+            .content-section h2 {
+                font-size: 2rem;
+            }
+
+            .content-section p {
+                font-size: 1rem;
+            }
+
+            .upper-column .btn {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Upper Column Section -->
+    <div class="upper-column">
+        <h1>Unit 3: Numerical Methods</h1>
+        <p>This section explores methods that help us find solutions when exact answers are difficult or impossible to calculate.</p>
+        <button class="btn" onclick="scrollToContent()">Learn More</button>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content-section" id="content-section">
+        <h2>Key Concepts:</h2>
+
+        <h3>Interpolation:</h3>
+        <ul>
+            <li><b>Lagrange Interpolation:</b> A method to estimate unknown values between known data points by creating a polynomial that fits those points.</li>
+            <li><b>Inverse Interpolation:</b> Used to find the value of an independent variable (like x) when the dependent variable (like y) is given.</li>
+        </ul>
+
+        <h3>Finite Differences:</h3>
+        <ul>
+            <li><b>Forward Differences:</b> A technique to calculate the difference between successive data points.</li>
+            <li><b>Backward Differences:</b> Similar to forward differences but works in the opposite direction.</li>
+            <li><b>Divided Differences:</b> A method to handle unevenly spaced data points by calculating differences between them.</li>
+        </ul>
+
+        <h3>Difference Tables:</h3>
+        <ul>
+            <li><b>Forward and Backward Difference Tables:</b> Tables used to organize and simplify the process of calculating differences for interpolation.</li>
+            <li><b>Divided Difference Table:</b> A table that organizes divided differences, which helps in interpolation when data points are not equally spaced.</li>
+        </ul>
+
+        <h3>Newton's Methods of Interpolation:</h3>
+        <ul>
+            <li><b>Newton's Forward Difference Method:</b> A formula used to estimate values when data points are evenly spaced.</li>
+            <li><b>Newton's Backward Difference Method:</b> Similar to the forward method but used when values at the end of the data set are more important.</li>
+            <li><b>Newton's Divided Difference Method:</b> This method is used for unevenly spaced data points and gives a polynomial for interpolation.</li>
+        </ul>
+
+        <h3>Numerical Integration:</h3>
+        <ul>
+            <li><b>Newton-Cotes Integration Formula:</b> A general way to approximate the area under a curve, which is useful for integration.</li>
+            <li><b>Trapezoidal Rule:</b> A simple method to estimate the area under a curve by approximating it as a series of trapezoids.</li>
+            <li><b>Simpson’s 1/3rd Rule and 3/8th Rule:</b> More accurate methods for finding the area under a curve by approximating it with parabolic sections.</li>
+        </ul>
+    </div>
+
+    <script>
+        // JavaScript for scrolling to the content section
+        function scrollToContent() {
+            document.querySelector('#content-section').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONM</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        /* Layout Styling */
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(135deg, #6a11cb, #adbcd8);
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        /* Navigation Bar */
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            background-color: #96b1e0;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #6a11cb;
+        }
+
+        /* Columns Layout */
+        .columns {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        .column {
+            background-color: #fff;
+            padding: 30px;
+            flex: 1;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+
+        .column:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .column h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #7e86d1;
+        }
+
+        .column p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .unit-4 {
+            display: flex;
+            flex-direction: column; /* Stack content vertically */
+            justify-content: center; /* Center items vertically */
+            align-items: center; /* Center items horizontally */
+            margin: 0 auto; /* Center the grid item */
+        }
+        .column a:hover {
+            background-color: #83bcdd;
+        }
+        .contact {
+            background-color:  #fff;
+            border: 1px solid #fff7f7;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            grid-column: 1 / -1; /* Span across all columns */
+        }
+        .contact:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(238, 241, 241, 0.2);
+        }
+
+        .contact h2 {
+            font-size: 1.8rem;
+            color: #7e86d1;
+            margin-bottom: 10px;
+        }
+
+        .contact p {
+            color: #19191b;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            background-color: #1f1f1f;
+            color: #b0bec5;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #333;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }   
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .columns {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Computer Oriented Numerical Methods</h1>
+        <!-- <p>Your resource for web development knowledge and tutorials.</p> -->
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#syllabus">Syllabus</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Columns Section -->
+        <div class="columns">
+            <!-- Column 1 -->
+            <div class="column">
+                <h2>Unit 1: Introduction</h2>
+                <p>An overview of Numerical Methods and their importance in computing.</p>
+                <a href="unit1frame.html">View Unit 1</a>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="column">
+                <h2>Unit 2: Interpolation</h2>
+                <p>Learn interpolation techniques including Newton's and Lagrange's methods.</p>
+                <a href="unit2frame.html">View Unit 2</a>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="column">
+                <h2>Unit 3: Numerical Integration</h2>
+                <p>Understand Simpson's rule, Trapezoidal rule, and their applications.</p>
+                <a href="unit3frame.html">View Unit 3</a>
+            </div>
+            <!-- Column 4 -->
+            <div class="column unit-4">
+                <h2>Unit 4: Differential Equations</h2>
+                <p>Explore numerical methods for solving differential equations.</p>
+                <a href="Unit4frames.html">View Unit 4</a>
+            </div>
+</div>
+</div>
+            <section id="contact" class="contact">
+                <h2>Contact Us</h2>
+                <p>Email: vinaysabharwal539@gmail.com</p>
+                <p>Phone: +91 85700 57848</p>
+                <p>Name : Vinay<br>Class : BCA-II<br>Roll No.: 4074/23<br>Teacher : Mrs. Nisha Gupta</p>
+            </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Web Coders | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

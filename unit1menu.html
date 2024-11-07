@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frame24</title>
+    <style>
+        /* General Body Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+        }
+
+        /* UL List Styling */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 300px;
+            background-color: white;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        /* List Item and Link Styling */
+        ul li {
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        ul li:last-child {
+            border-bottom: none;
+        }
+
+        ul li a {
+            display: block;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #0072ff;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+            border-radius: 10px;
+        }
+
+        /* Hover effect */
+        ul li a:hover {
+            background-color: #0072ff;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 114, 255, 0.4);
+        }
+
+        /* Active/Clicked Effect */
+        ul li a:active {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        /* For Mobile View */
+        @media (max-width: 768px) {
+            ul {
+                width: 90%;
+            }
+            ul li a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="BINARY TO DECIMAL.html" target="targetframe">BINARY TO DECIMAL</a></li>
+        <li><a href="DECIMAL TO BINARY.html" target="targetframe">DECIMAL TO BINARY</a></li>
+        <li><a href="FLOATING POINT ADDITION.html" target="targetframe">FLOATING POINT ADDITION</a></li>
+        <li><a href="FLOATING POINT SUBTRACTION.html" target="targetframe">FLOATING POINT SUBTRACTION</a></li>
+    </ul>
+</body>
+</html>
